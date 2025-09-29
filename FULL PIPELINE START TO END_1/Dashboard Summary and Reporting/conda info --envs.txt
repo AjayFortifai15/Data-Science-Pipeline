@@ -1,0 +1,26 @@
+Implement all these steps
+conda info --envs
+conda remove -n py312env --all -y
+conda create -n py312env python=3.12.3 -y
+conda activate py312env
+pip install -r requirements.txt --prefer-binary
+conda run -n py312env python -c "import torch, pandas, psycopg2, transformers, networkx; print('✅ All good')"
+
+
+pip install torch-scatter torch-sparse torch-cluster torch-spline-conv `
+  -f https://data.pyg.org/whl/torch-2.5.1+cu121.html
+
+Store Env as kernel
+pip install ipykernel
+python -m ipykernel install --user --name py312env --display-name "Python 3.12 (py312env)"
+
+
+Delete Not Required Kernel
+jupyter kernelspec list
+jupyter kernelspec remove fortifenv
+
+
+RUN CODE LIKE THIS:
+cd "C:\Users\ajayn\Downloads\SARA-23-09\training_and_prediction_pipeline - 23-9-2025\FULL PIPELINE START TO END"
+conda activate py312env
+python .\main.py
