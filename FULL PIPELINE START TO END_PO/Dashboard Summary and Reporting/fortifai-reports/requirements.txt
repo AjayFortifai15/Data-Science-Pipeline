@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pandas
+python-dateutil
+openpyxl
+xlsxwriter
+psycopg2-binary
+azure-storage-blob
