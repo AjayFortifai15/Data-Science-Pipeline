@@ -60,8 +60,8 @@ def main():
     tm = project_root / "training_models_risks"
 
     SCRIPTS: List[Path] = [
-        tm / "po_data_prep.py",
-        tm / "invoice_data_prep.py",
+        #tm / "po_data_prep.py",
+        #tm / "invoice_data_prep.py",
         tm / "training_step_1.py",
         tm / "training_step_2.py",
         tm / "training_step_3.py",
